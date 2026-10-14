@@ -12,3 +12,5 @@ def test_envio_express_3kg():
     assert calcular_envio(3, "express") == 100
 
 
+def test_envio_express_mayor_que_5kg():
+    assert calcular_envio(7, "express") == 140
