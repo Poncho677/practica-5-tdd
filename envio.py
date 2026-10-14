@@ -1,4 +1,6 @@
 def calcular_envio(peso, tipo_envio):
+    if peso == 0:
+        raise ValueError("El peso debe ser diferente de 0")
     if peso <= 5 and tipo_envio == "estandar":
         return 50
     elif peso > 5 and tipo_envio == "estandar":
