@@ -6,6 +6,10 @@ def test_envio_estandar_3kg():
     assert calcular_envio(3, "estandar") == 50
 
 
+def test_envio_estandar_5kg():
+    assert calcular_envio(5, "estandar") == 50
+    
+
 def test_envio_estandar_mayor_que_5kg():
     assert calcular_envio(7, "estandar") == 70
 
