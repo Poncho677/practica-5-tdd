@@ -26,3 +26,8 @@ def test_envio_estandar_0kg():
 def test_envio_express_menos_2kg():
     with pytest.raises(ValueError):
         calcular_envio(-2, "express")
+
+
+def test_envio_invalido_3kg():
+    with pytest.raises(ValueError):
+        calcular_envio(3, "urgente")
